@@ -5,6 +5,7 @@ class Genre
   @@all = []
 
   def initialize(name)
+    extend Concerns::Findable
     @name = name
     @songs = []
   end
