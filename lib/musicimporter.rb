@@ -6,6 +6,6 @@ class MusicImporter
   end
 
   def files
-    Dir.children(self.path).each {|filename| Song.new_from_filename(filename)}
+    Dir.children(path).reject {|f| f = '.' || f == '..'}
   end
 end
