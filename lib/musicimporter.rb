@@ -6,6 +6,6 @@ class MusicImporter
   end
 
   def files
-    Dir.children(path).reject {|f| f = '.' || f == '..'}
+    Dir.entries(path).reject {|f| f == '.' || f == '..'}
   end
 end
