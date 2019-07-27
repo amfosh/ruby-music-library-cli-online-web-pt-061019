@@ -42,13 +42,13 @@ end
 
   def list_artists
     Artist.all.sort_by{|x| x.name}.each.with_index(1) do |artist, index|
-      puts "#{index}.#{artist.name}"
+      puts "#{index}. #{artist.name}"
     end
   end
 
   def list_genres
     Genre.all.sort_by{|x| x.name}.each.with_index(1) do |genre, index|
-      puts "#{index}.#{genre.name}"
+      puts "#{index}. #{genre.name}"
     end
   end
 end
