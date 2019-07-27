@@ -1,13 +1,13 @@
 require_relative '../lib/concerns/findable'
 
 class Genre
+  extend Concerns::Findable
   attr_accessor :name
   attr_reader :songs
 
   @@all = []
 
   def initialize(name)
-    extend Concerns::Findable
     @name = name
     @songs = []
   end
