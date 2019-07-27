@@ -61,7 +61,6 @@ class Song
     song.save
   end
 end
-end
     # details = name.chomp(".mp3").split(" - ")
     # artist = Artist.find_or_create_by_name(artist)
     # genre = Genre.find_or_create_by_name(genre)
