@@ -54,7 +54,7 @@ class Song
     song.artist = artist
     song.genre = genre
   end
-    )# details = name.chomp(".mp3").split(" - ")
+    # details = name.chomp(".mp3").split(" - ")
     # artist = Artist.find_or_create_by_name(artist)
     # genre = Genre.find_or_create_by_name(genre)
     # new(details)
