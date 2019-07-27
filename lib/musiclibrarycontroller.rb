@@ -57,9 +57,18 @@ end
     input = gets
     if artist = Artist.find_by_name(input)
       artist.songs.sort_by(&:name).each.with_index(1) do |song, index|
-        puts list_songs
-      #  puts "#{index}. #{song.name} - #{song.genre.name}"
+        puts "#{index}. #{song.name} - #{song.genre.name}"
      end
    end
  end
+
+ def list_songs_by_genre
+   puts "Please enter the name of a genre:"
+   input = gets
+   if genre = Genre.find_by_name(input)
+       genre.songs.sort_by(&:name).each.with_index(1) do |genre, index|
+        puts "#{index}. #{genre.name}"
+      end
+    end
+  end
 end
